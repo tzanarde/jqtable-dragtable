@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <link rel="stylesheet" type="text/css" href="dragtable.css" />
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="jquery.dragtable.js"></script>
+
+    <!-- only for jquery.chili-2.2.js -->
+    <script src="http://code.jquery.com/jquery-migrate-1.1.1.js"></script>
+    <script type="text/javascript" src="http://akottr.github.io/js/jquery.chili-2.2.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+        $('.defaultTable').dragtable();
+
+      });
+    </script>
+
+    <title>jquery.dragtable.js</title>
+  </head>
+  <body>
+    <div class="container">
+      <table class="table defaultTable">
+        <thead class="thead-light">
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+            </tr>
+        </thead>
+        <tbody id="selectable">
+            <tr class="ui-widget-content">
+                <td>Cel 1.1</td>
+                <td>Cel 1.2</td>
+                <td>Cel 1.3</td>
+            </tr>
+            <tr class="ui-widget-content">
+                <td>Cel 2.1</td>
+                <td>Cel 2.2</td>
+                <td>Cel 2.3</td>
+            </tr>
+            <tr class="ui-widget-content">
+                <td>Cel 3.1</td>
+                <td>Cel 3.2</td>
+                <td>Cel 3.3</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
